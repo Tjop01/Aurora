@@ -29,5 +29,13 @@
 		<file name="monsters-of-the-multiverse.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/monsters-of-the-multiverse.index" />
 		<file name="tashas-cauldron-of-everything.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything.index" />
 
+		<!-- Custom -->
+		<file name="thunder_gauntelts.xml" url="https://tjop01.github.io/Aurora/thunder_gauntelts.xml.xml" />
+		<file name="race-fairy-wingless.xml" url="https://tjop01.github.io/Aurora/race-fairy-wingless.xml" />
+		<file name="more-modifiers.xml" url="https://tjop01.github.io/Aurora/more-modifiers.xml" />
+		<file name="custom_items.xml" url="https://tjop01.github.io/Aurora/custom_items.xml" />
+
+
+
 	</files>
 </index>
