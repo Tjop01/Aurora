@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-Version 3-
+Fixed description typos
+
+-Version 2-
+-Added spellslots
+-Added prepared spells
+-Added more HP options
+-Cleaned up code / fixed typos
+-->
+
+<elements>
+	<element name="More Modifiers" type="Source" source="Core" id="ID_KON_SOURCE_MORE_MODIFIERS">
+		<description>
+			<![CDATA[<p>Collection of Additional Feature equipment for raising and lowering stats as needed.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">MoMods</set>
+			<set name="url"></set>
+			<set name="image"></set>
+			<set name="author" abbreviation="Kon">Konard</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+
+	<element name="Armor: AC +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_AC_INCREASE">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your armor class is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="ac" value="1" />
+		</rules>
+	</element>
+
+	<element name="Armor: AC -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_AC_DECREASE">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your armor class is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="ac" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Health: HP +1/LV" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_INCREASE">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 1 more per level.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Health: HP -1/LV" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_DECREASE">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 1 less per level.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="-level" />
+		</rules>
+	</element>
+
+	<element name="Health: HP +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="1" />
+		</rules>
+	</element>
+
+	<element name="Health: HP -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Health: HP +10" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_INCREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 10 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="10" />
+		</rules>
+	</element>
+
+	<element name="Health: HP -10" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 10 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="-10" />
+		</rules>
+	</element>
+
+	<element name="Health: HP +100" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_INCREASE_100">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 100 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="100" />
+		</rules>
+	</element>
+
+	<element name="Health: HP -100" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_HP_DECREASE_100">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your health is 100 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="-100" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_STRENGTH_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Strength save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="strength:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Strength -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_STRENGTH_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Strength save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="strength:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Dexterity +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_DEXTERITY_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Dexterity save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Dexterity -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_DEXTERITY_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Dexterity save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Constitution +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_CONSTITUTION_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Constitution save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Constitution -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_CONSTITUTION_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Constitution save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Intelligence +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_INTELLIGENCE_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Intelligence save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Intelligence -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_INTELLIGENCE_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Intelligence save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Wisdom +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_WISDOM_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Wisdom save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Wisdom -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_WISDOM_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Wisdom save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Charisma +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_CHARISMA_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Charisma save is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma:save:misc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Saving Throw: Charisma -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SAVE_CHARISMA_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your Charisma save is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma:save:misc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Attack +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SPELL_ATTACK_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your spell attack bonus is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Attack -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SPELL_ATTACK_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your spell attack bonus is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Save DC +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SPELL_SAVE_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your spell save DC is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:dc" value="1"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Save DC -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SPELL_SAVE_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your spell save DC is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:dc" value="-1"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Prepared Spells +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_PREPARED_SPELLS_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain an additional prepared spell.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:prepare" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:prepare" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC"/>
+			<stat name="druid:spellcasting:prepare" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID"/>
+			<stat name="paladin:spellcasting:prepare" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:prepare" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Prepared Spells -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_PREPARED_SPELLS_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose a prepared spell.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:prepare" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:prepare" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC"/>
+			<stat name="druid:spellcasting:prepare" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID"/>
+			<stat name="paladin:spellcasting:prepare" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:prepare" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD"/>
+		</rules>
+	</element>
+
+	<element name="Speed: Climb -5 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_CLIMB_DECREASE_5">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 5 feet less of climbing speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:climb" value="-5" />
+		</rules>
+	</element>
+
+	<element name="Speed: Climb -10 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_CLIMB_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 10 feet less of climbing speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:climb" value="-10"/>
+		</rules>
+	</element>
+
+	<element name="Speed: Swim -5 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SWIM_DECREASE_5">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 5 feet less of smiming speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:swim" value="-5" />
+		</rules>
+	</element>
+
+	<element name="Speed: Swim -10 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_SWIM_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 10 feet less of smiming speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:swim" value="-10" />
+		</rules>
+	</element>
+
+	<element name="Speed: Fly -5 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_FLY_DECREASE_5">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 5 feet less of flying speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:fly" value="-5"/>
+		</rules>
+	</element>
+
+	<element name="Speed: Fly -10 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_FLY_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 10 feet less of flying speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:fly" value="-10" />
+		</rules>
+	</element>
+
+	<element name="Speed: Walk -5 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_WALK_DECREASE_5">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 5 feet less of walking speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="-5"/>
+		</rules>
+	</element>
+
+	<element name="Speed: Walk -10 Feet" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_WALK_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an 10 feet less of walking speed.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="-10" />
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 1st Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_1ST_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 1st level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:1" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:1" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:1" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:1" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 2nd Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_2ND_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 2nd level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:2" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:2" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:2" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:2" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 3rd Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_3RD_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 3rd level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:3" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:3" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:3" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:3" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 4th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_4TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 4th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:4" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:4" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:4" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:4" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 5th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_5TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 5th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:5" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:5" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:5" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:5" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 6th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_6TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 6th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:6" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:6" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:6" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:6" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 7th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_7TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 7th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:7" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:7" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:7" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:7" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 8th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_8TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 8th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:8" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:8" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:8" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="arcane trickster:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:8" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 9th Level Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_9TH_LEVEL_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain one additional spell slot of 9th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:9" value="1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:9" value="1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="multiclass:spellcasting:slot:9" value="1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
+            <stat name="arcane trickster:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+            <stat name="eldritch knight:spellcasting:slots:9" value="1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Pact Magic Slot +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_PACT_MAGIC_SPELL_SLOT_INCREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain additional spell slot for Pact Magic feature.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:slots:count" value="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 1st Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_1ST_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one spell slot of 1st level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:1" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:1" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:1" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 2nd Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_2ND_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 2nd level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:2" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:2" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:2" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:2" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 3rd Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_3RD_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 3rd level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:3" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:3" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:3" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:3" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 4th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_4TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 4th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:4" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:4" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:4" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:4" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 5th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_5TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 5th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:5" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:5" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:5" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:5" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 6th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_6TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 6th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:6" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:6" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:6" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:6" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 7th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_7TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 7th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:7" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:7" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:7" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:7" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 8th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_8TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 8th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:8" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:8" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:8" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="arcane trickster:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:8" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: 9th Level Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_9TH_LEVEL_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one additional spell slot of 9th level.</p>
+			<p><i><b>Note:</b></i> If you have multiclass spellcasting, slot is added to it instead of specific class's spellcasting.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:slots:9" value="-1" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="bard:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="cleric:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="druid:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="paladin:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="ranger:spellcasting:slots:9" value="-1" requirements="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="sorcerer:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="wizard:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WIZARD_SPELLCASTING_WIZARD,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="multiclass:spellcasting:slot:9" value="-1" requirements="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
+			<stat name="arcane trickster:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+			<stat name="eldritch knight:spellcasting:slots:9" value="-1" requirements="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING,!ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING"/>
+		</rules>
+	</element>
+
+	<element name="Spellcasting: Pact Magic Slot -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_PACT_MAGIC_SPELL_SLOT_DECREASE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You lose one spell slot for Pact Magic feature.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="warlock:spellcasting:slots:count" value="-1" requirements="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC"/>
+		</rules>
+	</element>
+</elements>

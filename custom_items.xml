@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Various Items</name>
+		<description>Custom items</description>
+		<update version="0.0.1">
+			<file name="custom_items.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Seal Stamp (Alchemical Ingrediences Guild)" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_SEAL_STAMP_ALCH">
+		<description>
+			<p>Magical sealinig stamp of alchemical supply guild </p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Magical Quill" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_MAGICAL_QUILL">
+		<description>
+			<p>Magical quill found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Magical Paper" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_MAGICAL_PAPERS">
+		<description>
+			<p>Magical papers found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.01">0.01 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Magical Burner" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_MAGICAL_BURNER">
+		<description>
+			<p>Magical burner found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Golden Ring from Alchemical Supply Guild" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_GOLDEN_RING_ALCH_GUILD">
+		<description>
+			<p>Golden ring with seal of alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">ring</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Golden Neckle" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_GOLDEN_NECKLE_ALCH_GUILD">
+		<description>
+			<p>Golden neckle from alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Puzzle Box" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_PUZZLE_BOX">
+		<description>
+			<p>Puzzle box with 1 foot side. Lock is circular numbering setter from old phone.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Liquid laxative" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_LIQUID_LAXATIVE">
+		<description>
+			<p>Liquid with no color or smell causing laxation.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Golden Ring from Town Hall" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_GOLDEN_RING_TOWN_HALL">
+		<description>
+			<p>Golden ring from Town Hall.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">ring</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Bottle of Cheaper Wine" type="Item" source="Custom Items" id="ID_CUSTOM_ITEM_WINE_CHEAP">
+		<description>
+			<p>Bottle of cheaper wine.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">7</set>
+			<set name="weight" lb="0.7">0.7 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Luminus" type="Deity" source="Custom" id="ID_CUSTOM_DEITY_LUMINUS">
+		<description>
+			<p class="flavor">god of light</p>
+		</description>
+		<setters>
+			<set name="setting">custom</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Light</set>
+			<set name="symbol">Lighted candle</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>god of light</description>
+		</sheet>
+	</element>
+
+	<element name="Seal Stamp (Alchemical Ingrediences Guild)" type="Item" source="Custom" id="ID_CUSTOM_ITEM_SEAL_STAMP_ALCH">
+		<description>
+			<p>Magical sealinig stamp of alchemical supply guild </p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Magical Quill" type="Item" source="Custom" id="ID_CUSTOM_ITEM_MAGICAL_QUILL">
+		<description>
+			<p>Magical quill found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Magical Paper" type="Item" source="Custom" id="ID_CUSTOM_ITEM_MAGICAL_PAPERS">
+		<description>
+			<p>Magical papers found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.01">0.01 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Magical Burner" type="Item" source="Custom" id="ID_CUSTOM_ITEM_MAGICAL_BURNER">
+		<description>
+			<p>Magical burner found in alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Golden Ring from Alchemical Supply Guild" type="Item" source="Custom" id="ID_CUSTOM_ITEM_GOLDEN_RING_ALCH_GUILD">
+		<description>
+			<p>Golden ring with seal of alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">ring</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Golden Neckle" type="Item" source="Custom" id="ID_CUSTOM_ITEM_GOLDEN_NECKLE_ALCH_GUILD">
+		<description>
+			<p>Golden neckle from alchemical supply guild.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Puzzle Box" type="Item" source="Custom" id="ID_CUSTOM_ITEM_PUZZLE_BOX">
+		<description>
+			<p>Puzzle box with 1 foot side. Lock is circular numbering setter from old phone.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Liquid laxative" type="Item" source="Custom" id="ID_CUSTOM_ITEM_LIQUID_LAXATIVE">
+		<description>
+			<p>Liquid with no color or smell causing laxation.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Golden Ring from Town Hall" type="Item" source="Custom" id="ID_CUSTOM_ITEM_GOLDEN_RING_TOWN_HALL">
+		<description>
+			<p>Golden ring from Town Hall.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="slot">ring</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	<element name="Bottle of Cheaper Wine" type="Item" source="Custom" id="ID_CUSTOM_ITEM_WINE_CHEAP">
+		<description>
+			<p>Bottle of cheaper wine.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">7</set>
+			<set name="weight" lb="0.7">0.7 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+
+</elements>
+
