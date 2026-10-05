@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Core</name>
+		<description>The content from the core rulebooks.</description>
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.2.8">
+			<file name="core-tjop.index" url="https://tjop01.github.io/Aurora/core-tjop.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Aurora-specific and Edition Agnostic files -->
+		<file name="internal.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/internal.xml" />
+		<file name="ALE.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/ALE.xml" />
+
+
+		<!-- 5e -->
+		<file name="players-handbook.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
+		<file name="dungeon-masters-guide.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide.index" />
+		<file name="monster-manual.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual.index" />
+		<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024.index" />
+		<file name="dungeon-masters-guide-2024.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide-2024.index" />
+		<file name="monster-manual-2025.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual-2025.index" />
+
+		<!-- Supplements -->
+		<file name="ranger-favored-enemies.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/ranger-favored-enemies.xml" />
+		<file name="sword-coast-adventurers-guide.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/sword-coast-adventurers-guide.index" />
+		<file name="xanathars-guide-to-everything.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/xanathars-guide-to-everything.index" />
+		<file name="monsters-of-the-multiverse.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/monsters-of-the-multiverse.index" />
+		<file name="tashas-cauldron-of-everything.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything.index" />
+
+		<!-- Custom -->
+		<file name="thunder_gauntelts.xml" url="https://tjop01.github.io/Aurora/thunder_gauntelts.xml" />
+		<file name="race-fairy-wingless.xml" url="https://tjop01.github.io/Aurora/race-fairy-wingless.xml" />
+		<file name="more-modifiers.xml" url="https://tjop01.github.io/Aurora/more-modifiers.xml" />
+		<file name="custom_items.xml" url="https://tjop01.github.io/Aurora/custom_items.xml" />
+
+
+
+	</files>
+</index>
