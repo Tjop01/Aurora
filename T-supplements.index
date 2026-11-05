@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Core</name>
+		<name>Supplements</name>
 		<description>The content from the core rulebooks.</description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
 		<update version="0.2.8">
-			<file name="core-tjop.index" url="https://tjop01.github.io/Aurora/core-tjop.index" />
+			<file name="T-supplements.index" url="https://tjop01.github.io/Aurora/core-tjop.index" />
 		</update>
 	</info>
 	<files>
