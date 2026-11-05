@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Core</name>
+		<description>The content from the core rulebooks.</description>
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.2.8">
+			<file name="core-tjop.index" url="https://tjop01.github.io/Aurora/Tjop-custom.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Custom -->
+		<file name="race-fairy-wingless.xml" url="https://tjop01.github.io/Aurora/race-fairy-wingless.xml" />
+		<file name="more-modifiers.xml" url="https://tjop01.github.io/Aurora/more-modifiers.xml" />
+		<file name="custom_items.xml" url="https://tjop01.github.io/Aurora/custom_items.xml" />
+		<file name="thunder_gauntlets.xml" url="https://tjop01.github.io/Aurora/thunder_gauntlets.xml" />
+	</files>
+</index>
