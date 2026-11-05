@@ -13,6 +13,6 @@
 		<file name="supplements.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index" />
 		<file name="unearthed-arcana.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana.index" />
 		<file name="collaborations.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/collaborations.index" />
-    
+		<file name="T-custom.index" url="https://tjop01.github.io/Aurora/T-custom.index" />    
 	</files>
 </index>
