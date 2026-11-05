@@ -5,7 +5,7 @@
 		<description>The content from the core rulebooks.</description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
 		<update version="0.2.8">
-			<file name="core-tjop.index" url="https://tjop01.github.io/Aurora/Tjop-custom.index" />
+			<file name="Tjop-custom.index" url="https://tjop01.github.io/Aurora/Tjop-custom.index" />
 		</update>
 	</info>
 	<files>
