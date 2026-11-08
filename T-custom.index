@@ -11,6 +11,7 @@
 	<files>
 		<!-- Custom -->
 		<file name="race-fairy-wingless.xml" url="https://tjop01.github.io/Aurora/race-fairy-wingless.xml" />
+		<file name="race-fairy-wingless.xml" url="https://tjop01.github.io/Aurora/grung-poisonless.xml" />
 		<file name="more-modifiers.xml" url="https://tjop01.github.io/Aurora/more-modifiers.xml" />
 		<file name="custom_items.xml" url="https://tjop01.github.io/Aurora/custom_items.xml" />
 		<file name="thunder_gauntlets.xml" url="https://tjop01.github.io/Aurora/thunder_gauntlets.xml" />
